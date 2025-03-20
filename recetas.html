@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="css/styleReceta.css">
+    <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon">
+
+</head>
+<body>
+    <div id="menu-container"></div>
+    <div id="content"></div>
+    <h1>
+        Recetas
+    </h1>
+    <div class="horizontal-menu">
+        <a href="pay_de_chocolate.html">
+            <div class="recetas">
+                <img src="assets/payChocolate.png" alt="">
+                <small>Pay de Chocolate</small>
+            </div>
+        </a>
+        <a href="pay_de_fresa.html">
+            <div class="recetas">
+                <img src="assets/payFresa.png" alt="">
+                <small>Pay de Fresa</small>
+            </div>
+        </a>
+        <a href="pay_de_limon.html">
+            <div class="recetas">
+                <img src="assets/payLimon.png" alt="">
+                <small>Pay de Limon</small>
+            </div>
+        </a>
+    </div>
+</body>
+<script>
+fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+</html>

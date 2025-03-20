@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay De Chocolate</title>
+    <link rel="stylesheet" href="css/stylePayChocolate.css">
+</head>
+
+<body>
+    <div id="menu-container"></div>
+    <div id="content"></div>
+    <div>
+        <link href='https://fonts.googleapis.com/css?family=Bangers|Kaushan+Script|Gloria+Hallelujah' rel='stylesheet'
+            type='text/css'>
+        <div class="f">
+            <div class="t">Pay De Chocolate</div>
+            <div class="pic">
+                <img class="picChocolate" src="/assets/payChocolate.png" alt="">
+            </div>
+            <div class="t2">Ingredientes y preparacion</div>
+            <div class="caja">
+                <div class="ingredientes"> Ingredientes <br /><br /></div>
+
+                <div class="ingredientes-2">
+                    <ul>
+                        <li>1 corteza preparada de 8 pulgadas (6 onzas) de galletas María o graham</li>
+                        <li>1 lata (12 onzas liquidas) de leche evaporada</li>
+                        <li>2 yemas de huevo grandes</li>
+                        <li>2 tazas(paquete de 12 onzas) de trocitos de chocolate</li>
+                        <li>Crema batida (opcional)</li>
+                        <li>1/4 taza de nueces picadas (opcional)</li>
+                    </ul><br /><br />
+                </div>
+
+                <div class="preparacion"> Preparacion <br /><br /></div>
+
+                <div class="preparacion-2">
+                    <ul>
+                        <li>1. Batir juntos la leche evaporada y las yemas de huevo en una olla mediana.</li>
+                        <li>2. Calentar a fuego medio-bajo, revolviendo constantemente, hasta que la mezcla esté bien
+                            caliente y haya espesado ligeramente; no la dejes hervir.</li>
+                        <li>3. Retirar del fuego; añadir los trocitos de chocolate revolviendo hasta que estén
+                            completamente derretidos y la mezcla esté suave.</li>
+                        <li>4. Verter la mezcla en la corteza; refrigerar durante 3 horas o hasta que esté firme.</li>
+                        <li>5. Decorar con crema batida antes de servir; espolvorear con nueces picadas si lo deseas.
+                        </li>
+                    </ul><br /><br />
+                    <br /><br />
+
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Derechos reservados para Hector Hugo de Lira Salas & Beatriz Diaz de Leon Diaz de
+                Leon</p>
+            <nav class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+
+</html>

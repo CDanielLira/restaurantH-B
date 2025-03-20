@@ -1,0 +1,67 @@
+body{
+    background-color: #f18e8e;
+  
+  }
+
+#menu-container {
+    height: 5.5rem; /* Ajusta esta altura según el tamaño de tu menú */
+    width: 100%;
+    position: fixed;
+    margin: -6px;
+    top: 0;
+    z-index: 100;
+}
+
+#content {
+    margin-top: 5.5rem; /* Asegúrate de que este valor sea igual o mayor que la altura del menú */
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.horizontal-menu{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-menu{
+    /* margin-top: 8rem; */
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.recetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.recetas img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.recetas small {
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-left: -5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.recetas:hover {
+    transform: scale(1.1);
+}

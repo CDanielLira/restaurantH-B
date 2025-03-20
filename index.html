@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefs Hector y Beatriz</title>
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon">
+</head>
+
+<body>
+    <div id="menu-container"></div>
+    <div id="content"></div>
+
+
+    <div class="container">
+        <div class="div1">
+            <img style="width: 70%;" src="assets/logo.webp" alt="">
+        </div>
+        <div class="right-container">
+            <div class="div2">
+                <h1>Chefs Hector y Beatriz</h1>
+            </div>
+            <div class="div3">
+                <p class="parrafo">
+                    ¡Bienvenidos a nuestra página de recetas de pays!
+                    Si eres amante de los postres y buscas nuevas ideas para sorprender en la cocina, este es el lugar
+                    ideal para ti.
+                    Aquí encontrarás recetas sencillas, deliciosas y llenas de sabor, perfectas para cualquier ocasión.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="hRecetas">Recetas</h1>
+
+    <div class="horizontal-menu">
+        <a href="pay_de_chocolate.html">
+            <div class="recetas">
+                <img src="assets/payChocolate.png" alt="">
+                <small>Pay de Chocolate</small>
+            </div>
+        </a>
+        <a href="pay_de_fresa.html">
+            <div class="recetas">
+                <img src="assets/payFresa.png" alt="">
+                <small>Pay de Fresa</small>
+            </div>
+        </a>
+        <a href="pay_de_limon.html">
+            <div class="recetas">
+                <img src="assets/payLimon.png" alt="">
+                <small>Pay de Limon</small>
+            </div>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Derechos reservados para Hector Hugo de Lira Salas & Beatriz Diaz de Leon Diaz de Leon</p>
+            <nav class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+
+</html>

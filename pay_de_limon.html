@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay De Limon</title>
+    <link rel="stylesheet" href="css/stylePayLimon.css">
+    <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="menu-container"></div>
+    <div id="content"></div>
+    <div>
+        <link href='https://fonts.googleapis.com/css?family=Bangers|Kaushan+Script|Gloria+Hallelujah' rel='stylesheet'
+            type='text/css'>
+        <div class="f">
+            <div class="t">Pay De Limon</div>
+            <div class="pic">
+                <img class="picChocolate" src="/assets/payLimon.png" alt="">
+            </div>
+            <div class="t2">Ingredientes y preparacion</div>
+            <div class="caja">
+                <div class="ingredientes"> Ingredientes <br /><br /></div>
+
+                <div class="ingredientes-2">
+                    <ul>
+                        <li>1 lata de leche condensada (395g).</li>
+                        <li>1 lata de leche evaporada (360g).</li>
+                        <li>Jugo de limón (200 ml) Aprox. 10 limones.</li>
+                        <li>Dos paquetes de galletas Marías.</li>
+                    </ul><br /><br />
+                </div>
+
+                <div class="preparacion"> Preparacion <br /><br /></div>
+
+                <div class="preparacion-2">
+                    <ul>
+                        <li>1. Lo primero que tienes que hacer es colar el jugo de limón para que quede
+                            completamente libre de semillas.</li>
+                        <li>2. Tendrás que licuar el limón con la leche condensada y evaporada, hasta
+                            obtener una pasta que será una de las bases con las que vas a crear el postre.</li>
+                        <li>3. En el refractario pondrás una capa de galletas enteras, seguida de una capa
+                            de la pasta, procurando no dejar huecos entre ambas y repitiendo el proceso hasta llenarlo.
+                        </li>
+                        <li>4. La última capa, que debe ser con la pasta, la puedes decorar con ralladura de
+                            limón o trozos de galleta enteros y un toque de canela.</li>
+                        <li>Finalmente tapas el refractario con papel aluminio y lo dejas enfriar durante
+                            3 horas en el refrí para que esté listo para disfrutar.</li>
+                    </ul><br /><br />
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Derechos reservados para Hector Hugo de Lira Salas & Beatriz Diaz de Leon Diaz de
+                Leon</p>
+            <nav class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+
+</html>

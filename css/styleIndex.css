@@ -1,0 +1,153 @@
+body {
+    background-color: #f18e8e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-container {
+    height: 5.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #ff7f7f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#content {
+    margin-top: 5.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    /* margin-top: 2rem; */
+    font-size: 2.5rem;
+}
+
+.horizontal-menu {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.recetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.recetas img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.recetas small {
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-left: -5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.recetas:hover {
+    transform: scale(1.1);
+}
+
+img {
+    border-radius: 20px;
+    /* Redondea las esquinas */
+    object-fit: cover;
+}
+
+
+.parrafo {
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    height: 70vh;
+    /* gap: 10px; */
+}
+
+.div1 {
+    /* background-color: ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.5fr;
+    gap: 10px;
+}
+
+.div2,
+.div3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 {
+    margin-top: 3em;
+    background-color: #CC8F8F;
+}
+
+.div3 {
+    background-color: #e76f51;
+}
+
+.footer {
+    background-color: #482727;
+    margin-left: -0.5rem;
+    width: 97%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
